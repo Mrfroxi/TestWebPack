@@ -10,6 +10,7 @@
       "esModuleInterop": true,
       //for default import from nodejs libs
       "allowSyntheticDefaultImports": true,
+      "baseUrl": "."
     },
     "ts-node": {
       "compilerOptions": {
