@@ -9,8 +9,6 @@ export function buildWebpackConfig(options:BuildOptions):Configuration{
 
     const {paths,mode,isDev} = options;
 
-
-
     return {
   
         mode: mode,
