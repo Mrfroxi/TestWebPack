@@ -1,10 +1,9 @@
 import { render } from "react-dom";
-
+import classes from './style.scss'
+import App from "./App";
 
 
 render(
-    <div className="div">
-       hello 43214
-    </div>,
+   <App/>,
     document.getElementById('root')
 )

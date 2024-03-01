@@ -1,7 +1,8 @@
+import classes from './style.module.scss'
 
 const Counter = () => {
   return (
-    <div>Counter</div>
+    <div className={classes.hello}>Counter</div>
   )
 }
 
