@@ -1,5 +1,5 @@
-import { FC, useMemo, useState } from "react";
-import { LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext } from "./ThemeContext"
+import {FC, useMemo, useState} from "react";
+import {LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext} from "./ThemeContext"
 
 const ThemeProvider:FC = ({children}) => {
 
@@ -12,8 +12,6 @@ const ThemeProvider:FC = ({children}) => {
         theme: theme,
         setTheme: setTheme,
       }), [theme]);
-
-
 
   return (
     <ThemeContext.Provider  value={defaultProps}>

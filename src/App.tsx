@@ -1,10 +1,11 @@
 import './styles/index.scss'
-import { Route, Routes } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-import { MainPageAsync } from './pages/MainPage/MainPage.async'
-import { AboutPageAsync } from './pages/AboutPage/AboutPage.async'
-import { Suspense } from 'react'
-import { useTheme } from './theme/useTheme'
+import {Link, Route, Routes} from 'react-router-dom'
+import {MainPageAsync} from './pages/MainPage/MainPage.async'
+import {AboutPageAsync} from './pages/AboutPage/AboutPage.async'
+import {Suspense} from 'react'
+import {useTheme} from './theme/useTheme'
+import {classNames} from "./helpers/classNames/classNames";
+
 const App = () => {
 
 
@@ -12,7 +13,7 @@ const App = () => {
 
   return (
 
-    <div className={`app ${theme}`}>
+    <div className={classNames('app',{},[theme,'cls2'])}>
 
       <button onClick={toggleTheme}>toggle</button>
 
@@ -31,4 +32,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
